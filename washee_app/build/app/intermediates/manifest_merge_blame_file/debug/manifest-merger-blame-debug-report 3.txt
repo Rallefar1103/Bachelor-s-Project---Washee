@@ -1,0 +1,158 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.washee_app"
+4    android:versionCode="6"
+5    android:versionName="1.0.1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="30" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/android/app/src/main/AndroidManifest.xml:3:5-66
+14-->/Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/android/app/src/main/AndroidManifest.xml:3:22-64
+15    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+15-->/Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/android/app/src/main/AndroidManifest.xml:4:5-75
+15-->/Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/android/app/src/main/AndroidManifest.xml:4:22-73
+16    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+16-->/Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/android/app/src/main/AndroidManifest.xml:5:5-75
+16-->/Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/android/app/src/main/AndroidManifest.xml:5:22-73
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->/Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/android/app/src/main/AndroidManifest.xml:6:5-79
+17-->/Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/android/app/src/main/AndroidManifest.xml:6:22-76
+18
+19    <uses-feature android:name="android.hardware.wifi" />
+19-->/Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/android/app/src/main/AndroidManifest.xml:7:5-58
+19-->/Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/android/app/src/main/AndroidManifest.xml:7:19-55
+20
+21    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+21-->[:wifi_iot] /Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/build/wifi_iot/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-79
+21-->[:wifi_iot] /Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/build/wifi_iot/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-76
+22    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+22-->[:wifi_iot] /Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/build/wifi_iot/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-79
+22-->[:wifi_iot] /Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/build/wifi_iot/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-76
+23    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+23-->[:wifi_iot] /Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/build/wifi_iot/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-81
+23-->[:wifi_iot] /Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/build/wifi_iot/intermediates/library_manifest/debug/AndroidManifest.xml:14:22-78
+24    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+24-->[:wifi_iot] /Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/build/wifi_iot/intermediates/library_manifest/debug/AndroidManifest.xml:17:5-73
+24-->[:wifi_iot] /Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/build/wifi_iot/intermediates/library_manifest/debug/AndroidManifest.xml:17:22-70
+25    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+25-->[:open_file] /Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-83
+25-->[:open_file] /Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-80
+26    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+26-->[:open_file] /Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-80
+26-->[:open_file] /Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-77
+27
+28    <application
+29        android:name="android.app.Application"
+30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+30-->[androidx.core:core:1.6.0] /Users/rasmushenriksen/.gradle/caches/transforms-2/files-2.1/122df2e57d294d1a53db26bbc3b813c1/core-1.6.0/AndroidManifest.xml:24:18-86
+31        android:debuggable="true"
+32        android:icon="@mipmap/ic_launcher"
+33        android:label="washee_app" >
+34        <activity
+35            android:name="com.example.washee_app.MainActivity"
+36            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+37            android:hardwareAccelerated="true"
+38            android:launchMode="singleTop"
+39            android:theme="@style/LaunchTheme"
+40            android:windowSoftInputMode="adjustResize" >
+41
+42            <!--
+43                 Specifies an Android theme to apply to this Activity as soon as
+44                 the Android process has started. This theme is visible to the user
+45                 while the Flutter UI initializes. After that, this theme continues
+46                 to determine the Window background behind the Flutter UI.
+47            -->
+48            <meta-data
+49                android:name="io.flutter.embedding.android.NormalTheme"
+50                android:resource="@style/NormalTheme" />
+51            <!--
+52                 Displays an Android View that continues showing the launch screen
+53                 Drawable until Flutter paints its first frame, then this splash
+54                 screen fades out. A splash screen is useful to avoid any visual
+55                 gap between the end of Android's launch screen and the painting of
+56                 Flutter's first frame.
+57            -->
+58            <meta-data
+59                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+60                android:resource="@drawable/launch_background" />
+61
+62            <intent-filter>
+63                <action android:name="android.intent.action.MAIN" />
+64
+65                <category android:name="android.intent.category.LAUNCHER" />
+66            </intent-filter>
+67        </activity>
+68        <!--
+69             Don't delete the meta-data below.
+70             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+71        -->
+72        <meta-data
+73            android:name="flutterEmbedding"
+74            android:value="2" />
+75
+76        <provider
+76-->[:open_file] /Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-21:20
+77            android:name="com.crazecoder.openfile.FileProvider"
+77-->[:open_file] /Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-64
+78            android:authorities="com.example.washee_app.fileProvider.com.crazecoder.openfile"
+78-->[:open_file] /Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-88
+79            android:exported="false"
+79-->[:open_file] /Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
+80            android:grantUriPermissions="true" >
+80-->[:open_file] /Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
+81            <meta-data
+81-->[:open_file] /Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-20:53
+82                android:name="android.support.FILE_PROVIDER_PATHS"
+82-->[:open_file] /Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-67
+83                android:resource="@xml/filepaths" />
+83-->[:open_file] /Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:20:17-50
+84        </provider>
+85
+86        <service
+86-->[:location] /Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/build/location/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-15:56
+87            android:name="com.lyokone.location.FlutterLocationService"
+87-->[:location] /Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/build/location/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-71
+88            android:enabled="true"
+88-->[:location] /Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/build/location/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-35
+89            android:exported="false"
+89-->[:location] /Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/build/location/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
+90            android:foregroundServiceType="location" />
+90-->[:location] /Users/rasmushenriksen/Desktop/Bachelor-Project/P6/washee_app/build/location/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-53
+91
+92        <uses-library
+92-->[androidx.window:window:1.0.0-beta04] /Users/rasmushenriksen/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+93            android:name="androidx.window.extensions"
+93-->[androidx.window:window:1.0.0-beta04] /Users/rasmushenriksen/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+94            android:required="false" />
+94-->[androidx.window:window:1.0.0-beta04] /Users/rasmushenriksen/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+95        <uses-library
+95-->[androidx.window:window:1.0.0-beta04] /Users/rasmushenriksen/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+96            android:name="androidx.window.sidecar"
+96-->[androidx.window:window:1.0.0-beta04] /Users/rasmushenriksen/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+97            android:required="false" />
+97-->[androidx.window:window:1.0.0-beta04] /Users/rasmushenriksen/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+98
+99        <activity
+99-->[com.google.android.gms:play-services-base:16.0.1] /Users/rasmushenriksen/.gradle/caches/transforms-2/files-2.1/0340287e17a22c353a68da1b75a5ccea/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
+100            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+100-->[com.google.android.gms:play-services-base:16.0.1] /Users/rasmushenriksen/.gradle/caches/transforms-2/files-2.1/0340287e17a22c353a68da1b75a5ccea/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
+101            android:exported="false"
+101-->[com.google.android.gms:play-services-base:16.0.1] /Users/rasmushenriksen/.gradle/caches/transforms-2/files-2.1/0340287e17a22c353a68da1b75a5ccea/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
+102            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+102-->[com.google.android.gms:play-services-base:16.0.1] /Users/rasmushenriksen/.gradle/caches/transforms-2/files-2.1/0340287e17a22c353a68da1b75a5ccea/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
+103
+104        <meta-data
+104-->[com.google.android.gms:play-services-basement:16.0.1] /Users/rasmushenriksen/.gradle/caches/transforms-2/files-2.1/5dcbf549ea597ba6794e70b66cbf1dae/jetified-play-services-basement-16.0.1/AndroidManifest.xml:23:9-25:69
+105            android:name="com.google.android.gms.version"
+105-->[com.google.android.gms:play-services-basement:16.0.1] /Users/rasmushenriksen/.gradle/caches/transforms-2/files-2.1/5dcbf549ea597ba6794e70b66cbf1dae/jetified-play-services-basement-16.0.1/AndroidManifest.xml:24:13-58
+106            android:value="@integer/google_play_services_version" />
+106-->[com.google.android.gms:play-services-basement:16.0.1] /Users/rasmushenriksen/.gradle/caches/transforms-2/files-2.1/5dcbf549ea597ba6794e70b66cbf1dae/jetified-play-services-basement-16.0.1/AndroidManifest.xml:25:13-66
+107    </application>
+108
+109</manifest>
